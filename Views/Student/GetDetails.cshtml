@@ -1,0 +1,24 @@
+﻿@model Student
+
+@{
+    ViewData["Title"] = "GetDetails";
+}
+
+<section class="ftco-section bg-light">
+    <div class="container">
+        <div class="row">
+
+           <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">@Model.Name</h5>
+            <h6 class="card-subtitle mb-2 text-muted">@Model.age</h6>
+            <p class="d-flex mb-0 d-block">
+            <a href="/Student/Edit/@Model.Id" class="btn btn-secondary py-2 ml-3">Edit</a>
+            <a href="/Student/Remove/@Model.Id" class="btn btn-primary py-2 mr-1">Remove</a></p>
+            @*<a href="/Student/Edit/@Model.Id" class="card-button">Edit</a>
+            <a href="" class="card-button">Delete</a>*@
+  </div>
+</div>
+        </div>
+    </div>
+</section>
